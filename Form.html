@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./Form.css">
+</head>
+
+<body class="margenes">
+    <h3>Formulario de inscripcion para tutorias</h3>
+    <div>
+        <a>Nombre:</a>
+        <input class="input" id="input-nombre" pattern="^[A-Za-z]+$" />
+    </div>
+    <div>
+        <a>Email:</a>
+        <input class="input marginInput" id="input-email" />
+    </div>
+    <a>Horario:</a>
+    <div>
+        <input type="radio" id="input-select-dia" name="options" checked>
+        <a>Dia</a>
+    </div>
+    <div>
+        <input type="radio" id="input-select-noche" name="options">
+        <a>Noche</a>
+    </div>
+    <div>
+        <a>Fecha:</a>
+        <input type="date" class="input marginInput" id="input-fecha">
+    </div>
+    <button class="Boton" id="bttn-enviar">Enviar</button>
+
+    <div id="lista">
+    </div>
+
+    <script type="text/javascript" src="Form.js"></script>
+</body>
+
+</html>
